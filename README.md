@@ -4,7 +4,13 @@
 
 <body>
 <ol type="I">
-<li>teste</li>
+<li>ForkBomb</li>
+<li>Grab-WindowsSysinfo</li>
+<li>Netcat-Revshell</li>
+<li>Revshell-and-DisableWindefender</li>
+<li>Steal-Wifi-Passwd</li>
+<li>Wallpaper-Prank</li>
+<li>Windows-Crasher</li>
 </ol>
 </body>
 </html>
