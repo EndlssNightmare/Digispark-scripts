@@ -1,6 +1,6 @@
 <h1 align="center">Digispark Attiny85 scripts</h1>
 
-<img align="right" width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
+<img align="center" width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
 
 <p align="center">This repository focuses on storing scripts for digispark. I'll update over time as I gain more experience and I'll also be adding improvements as I go along.</p>
 
