@@ -5,7 +5,7 @@
 <img align="center" width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
 
 <body>
-  <h2> Scripts </h2>
+  <h2> BadUsb Scripts </h2>
 <ol type="I">
 <li>ForkBomb</li>
 <li>Grab-WindowsSysinfo</li>
