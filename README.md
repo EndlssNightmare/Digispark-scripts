@@ -7,7 +7,16 @@
 </p>
 
 <body>
-  <h2> BadUsb Scripts </h2>
+   <h3> Dependences </h3>
+<ul>
+  <li>Digistump packages: <p><a href="https://github.com/digistump/DigistumpArduino">DigistumpArduino</a></p></li>
+</ul>  
+
+
+
+
+
+  <h3> BadUsb Scripts </h3>
 <ol type="I">
 <li>ForkBomb</li>
 <li>Grab-WindowsSysinfo</li>
