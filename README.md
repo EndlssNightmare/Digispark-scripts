@@ -7,7 +7,7 @@
 </p>
 
 <body>
-   <h2 align="center"> Dependences </h2>
+   <h2 align="left"> Dependences </h2>
 <ul>
   <li>Digistump packages:<a href="https://github.com/digistump/DigistumpArduino"> DigistumpArduino</a></li>
   <li>Digispark ABNT2:<a href="https://github.com/jcldf/digisparkABNT2"> DigisparkABNT2</a></li>
@@ -18,7 +18,7 @@
 
 
 
-  <h2 align="center"> BadUsb Scripts </h2>
+  <h2 align="left"> BadUsb Scripts </h2>
 <ol type="I">
 <li>ForkBomb</li>
 <li>Grab-WindowsSysinfo</li>
