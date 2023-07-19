@@ -18,7 +18,7 @@
 
 
 
-  <h2 align="left"> BadUsb Scripts </h2>
+  <h2 align="left"> Digispark Scripts </h2>
 <ol type="I">
 <li>ForkBomb</li>
 <li>Grab-WindowsSysinfo</li>
