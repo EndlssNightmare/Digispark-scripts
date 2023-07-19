@@ -9,7 +9,7 @@
 <body>
    <h3> Dependences </h3>
 <ul>
-  <li>Digistump packages: <p><a href="https://github.com/digistump/DigistumpArduino">DigistumpArduino</a></p></li>
+  <li>Digistump packages:<a href="https://github.com/digistump/DigistumpArduino">DigistumpArduino</a></li>
 </ul>  
 
 
