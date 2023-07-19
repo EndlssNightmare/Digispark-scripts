@@ -1,6 +1,6 @@
 <h1 align="center">Digispark Attiny85 Scripts</h1>
 
-<p align="center">This repository focuses on storing scripts for digispark. I'll update over time as I gain more experience and I'll also be adding improvements as I go along.</p>
+<p align="center">This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience :).</p>
 
 <p align="center">
 	<img width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
@@ -18,7 +18,7 @@
 <li>Windows-Crasher</li>
 </ol>
 
-####Teste
+
 
 </body>
 </html>
