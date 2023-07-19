@@ -10,6 +10,8 @@
    <h3> Dependences </h3>
 <ul>
   <li>Digistump packages:<a href="https://github.com/digistump/DigistumpArduino"> DigistumpArduino</a></li>
+  <li>Digispark ABNT2:<a href="https://github.com/jcldf/digisparkABNT2"> DigisparkABNT2</a></li>
+  <li>Arduino IDE:<a href="https://www.arduino.cc/en/software"> ArduinoIDE</a></li>
 </ul>  
 
 
