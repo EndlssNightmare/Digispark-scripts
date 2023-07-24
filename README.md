@@ -2,7 +2,7 @@
 
 >This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience :).
 
->Obs: These scripts are for educational purposes only. Use them at your own risk but I will not be responsible for your actions!
+>Obs: These scripts are for educational purposes only. Use them at your own risk because I will not be responsible for your actions!
 
 <p align="center">
 	<img width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
@@ -26,7 +26,7 @@
   <li>Revshell-and-DisableWindefender</li>
   <li>Steal-Wifi-Passwd</li>
   <li>Wallpaper-Prank</li>
-  <li>> Windows-Crasher</li>
+  <li>Windows-Crasher</li>
 </ol>
 
 <h1 align="center">🚧⛔ Under development! ⛔🚧</h1>
