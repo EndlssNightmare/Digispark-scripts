@@ -1,4 +1,4 @@
-<h1 align="center">Digispark Attiny85 Scripts for Windows</h1>
+<h1 align="center">💀Digispark Attiny85 Scripts for Windows💀</h1>
 
 <br>
 
