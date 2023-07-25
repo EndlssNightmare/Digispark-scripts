@@ -3,10 +3,10 @@
 <br>
 
 >This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience :).
+>
 
-<br>
-
->`Obs: These scripts are for educational purposes only. Use them at your own risk because I will not be responsible for your actions!`
+>
+>Obs: These scripts are for educational purposes only. Use them at your own risk because I will not be responsible for your actions!
 
 <br>
 
@@ -17,30 +17,24 @@
 <br>
 
 <body>
-   <h2 align="left"> Dependences </h2>
-<ul>
+   <h2 align="left"> Dependences:</h2>
+
+  <br>
+  
+  >Digistump packages:<a href="https://github.com/digistump/DigistumpArduino"> DigistumpArduino</a>
+  >
+  >
+  >Digispark ABNT2:<a href="https://github.com/jcldf/digisparkABNT2" > DigisparkABNT2</a>
+  >
+  >
+  >Arduino IDE:<a href="https://www.arduino.cc/en/software"> ArduinoIDE</a>
+  >
+  >
+  >Metasploit Framework:<a href="https://www.metasploit.com"> Metasploit Framework</a>
 
   <br>
 
-  ><li>Digistump packages:<a href="https://github.com/digistump/DigistumpArduino"> DigistumpArduino</a></li>
-
-  <br>
-
-  ><li>Digispark ABNT2:<a href="https://github.com/jcldf/digisparkABNT2"> DigisparkABNT2</a></li>
-
-  <br>
-
-  ><li>Arduino IDE:<a href="https://www.arduino.cc/en/software"> ArduinoIDE</a></li>
-
-  <br>
-
-  ><li>Metasploit Framework:<a href="https://www.metasploit.com"> Metasploit Framework</a></li>
-
-  <br>
-
-</ul>  
-
-  <h2 align="left"> Digispark Scripts </h2>
+  <h2 align="left"> Digispark Scripts:</h2>
 <ol type="I">
 
   <br>
@@ -49,9 +43,9 @@
 
   <br>
 
-  `This Fakeupdate script opens a fake Windows update website and is configured to be full screen.`
+  **This Fakeupdate script opens a fake Windows update website and is configured to be full screen.**
 
-  `Run the digispark and be fun :)`
+  **Run the digispark and be fun :)**
 
   <br>
 
@@ -59,11 +53,11 @@
 
   <br>
 
-  `This fork bomb script will repeat itself until the pc freezes or crashes.`
+  **This fork bomb script will repeat itself until the pc freezes or crashes.**
 
-  `Upload the fork bomb script to digispark and run it.`
+  **Upload the fork bomb script to digispark and run it.**
 
-  `⛔Take care with this script and have fun :).⛔`
+  **⛔Take care with this script and have fun :).⛔**
 
   <br>
 
@@ -71,9 +65,9 @@
 
   <br>
 
-  `Copy and pase your WebHook link on the digispark script.`
+  **Copy and pase your WebHook link on the digispark script.**
 
-  `Run the digispark and copy the informations to a file.`
+  **Run the digispark and copy the informations to a file.**
 
   <br>
 
@@ -81,7 +75,7 @@
 
   <br>
 
-  `Create your own metasploitable file, set your IP and listener port and  run de .rc script:`
+  **Create your own metasploitable file, set your IP and listener port and  run de .rc script:**
 
   <br>
 
@@ -91,7 +85,7 @@ msfconsole -r meta.rc
 
   <br>
 
-  `Then run the digispark.`
+  **Then run the digispark.**
 
   <br>
 
@@ -99,7 +93,7 @@ msfconsole -r meta.rc
 
   <br>
 
-  `Set your http server to download NetCat on victim's machine:`
+  **Set your http server to download NetCat on victim's machine:**
 
   <br>
 
@@ -109,7 +103,7 @@ python3 -m http.server 80
 
   <br>
 
-  `Run the digispark and listen to the port:`
+  **Run the digispark and listen to the port:**
 
   <br>
 
@@ -123,9 +117,9 @@ nc -lvnp port
 
   <br>
 
-  `Save the .ps1 script on your own secret gist repository, copy and paste the raw link on the Arduino IDE.`
+  **Save the .ps1 script on your own secret gist repository, copy and paste the raw link on the Arduino IDE.**
 
-  `Run the digispark and listen to the port:`
+  **Run the digispark and listen to the port:**
 
   <br>
 
@@ -139,9 +133,9 @@ nc -lvnp port
 
   <br>
 
-  `Copy and pase your WebHook link on the digispark script.`
+  **Copy and pase your WebHook link on the digispark script.**
 
-  `Run the digispark and copy the WiFi passwd informations to a file.`
+  **Run the digispark and copy the WiFi passwd informations to a file.**
 
   <br>
 
@@ -149,9 +143,9 @@ nc -lvnp port
   
   <br>
 
-  `This Wallpaper Prank script takes a picture of the desktop, saves it as the background and hides all the icons.`
+  **This Wallpaper Prank script takes a picture of the desktop, saves it as the background and hides all the icons.**
 
-  `Run the digispark and have fun :)`
+  **Run the digispark and have fun :)**
 
   <br>
   
@@ -159,11 +153,11 @@ nc -lvnp port
   
   <br>
 
-  `This Windows Crasher script creates a .bat payload on the temporary dir and crashes de Windows`
+  **This Windows Crasher script creates a .bat payload on the temporary dir and crashes de Windows**
 
-  `Upload the fork bomb script to digispark and run it.`
+  **Upload the fork bomb script to digispark and run it.**
 
-  `⛔Take care with this script and have fun :).⛔`
+  **⛔Take care with this script and have fun :).⛔**
 
   <br>
 
@@ -175,15 +169,11 @@ nc -lvnp port
   
   <br>
 
-  ><li><a href="https://github.com/CedArctic/DigiSpark-Scripts"> CedArctic</a></li>
-
-  <br>
-
-  ><li><a href="https://github.com/brunomlima/Digispark"> Brunomlima</a></li>
-
-  <br>
-
-  ><li><a href="https://github.com/Gadotti/DigisparkScripts"> Gadotti</a></li>
+  ><a href="https://github.com/CedArctic/DigiSpark-Scripts"> CedArctic</a>
+  >
+  ><a href="https://github.com/brunomlima/Digispark"> Brunomlima</a>
+  >
+  ><a href="https://github.com/Gadotti/DigisparkScripts"> Gadotti</a>
 
   <br>
 
