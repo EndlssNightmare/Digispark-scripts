@@ -1,12 +1,17 @@
 <h1 align="center">💀Digispark Attiny85 Scripts for Windows💀</h1>
 
 <br>
-
+>
 >This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience :).
+>
 
+>
 >Obs: These scripts are for educational purposes only. Use them at your own risk because I will not be responsible for your actions!
+>
 
+>
 >Works on Parrot OS, Kali Linux and Termux!
+>
 
 <br>
 
