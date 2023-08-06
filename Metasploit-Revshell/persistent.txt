@@ -1,1 +1,13 @@
-Set-MpPreference -ExclusionPath 'C:\Users\USERNAME\appdata\roaming\microsoft\windows\start menu\programs\startup'
+Set-MpPreference -ExclusionPath 'C:\Users\USERNAME\appdata\roaming\microsoft\windows\start menu\programs\startup' //Set an exclusion path or file.
+
+Get-Command -Module Defender //List commands.
+
+Get-MpComputerStatus | Select-Object -Property Antivirusenabled,AMServiceEnabled,AntispywareEnabled,BehaviorMonitorEnabled,IoavProtectionEnabled,NISEnabled,OnAccessProtectionEnabled,RealTimeProtectionEnabled,IsTamperProtected,AntivirusSignatureLastUpdated //List all the security infos.
+
+Get-Service Windefend, SecurityHealthService, wscsvc| Select Name,DisplayName, Status //List.
+
+Set-MpPreference -DisableRealtimeMonitoring $true //Disable / enable av protection.
+
+Set-MpPreference -DisableRealtimeMonitoring $true //List tamper protection.
+
+Set-MpPreference -MAPSReporting 0 ​//Disable cloud-based protection.
