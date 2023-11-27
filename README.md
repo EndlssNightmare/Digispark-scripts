@@ -7,11 +7,11 @@
 >
 
 >
->Obs: These scripts are for educational purposes only. Use them at your own risk because I will not be responsible for your actions!
+>Obs: These scripts are for educational purposes only. Use them at your own risk. I will not be responsible for your actions!
 >
 
 >
->Works on Parrot OS, Kali Linux and Termux!
+>Works with Windows, Linux and Termux!
 >
 
 <br>
