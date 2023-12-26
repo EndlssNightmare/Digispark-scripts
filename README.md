@@ -161,7 +161,7 @@ nc -lvnp port
 
   **This Windows Crasher script creates a .bat payload on the temporary dir and crashes de Windows**
 
-  **Upload the fork bomb script to digispark and run it.**
+  **Upload the Windows Crasher script to digispark and run it.**
 
   **⛔Take care with this script and have fun :).⛔**
 
