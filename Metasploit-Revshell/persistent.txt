@@ -14,3 +14,5 @@ Enable-NetFirewallRule -DisplayGroup "Remote Desktop" //ADD firewall rule to acc
 Enable-NetFirewallRule -DisplayGroup "Área de Trabalho Remota" //ADD firewall rule to access RDP - Sistema em br
 
 Set-MpPreference -MAPSReporting 0 ​//Disable cloud-based protection.
+
+netsh advfirewall add rule name="rdp" protocol=TCP dit=in localport=3389 action=allow //Cria uma regra de firewall para a porta 3389 RDP
