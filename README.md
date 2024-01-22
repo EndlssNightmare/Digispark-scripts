@@ -56,7 +56,7 @@
 
   <br>
 
-  <h2 align="left"> Digispark Scripts</h2>
+  <h2 align="left"> How to use</h2>
 <ol type="I">
 
   <br>
