@@ -59,7 +59,7 @@ pisca_led(100);
   DigiKeyboard.delay(100);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(KEY_M, MOD_GUI_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);  //Fecha a janela
   //
  pisca_led(1000); 
   for(;;){ /*empty*/ } 
