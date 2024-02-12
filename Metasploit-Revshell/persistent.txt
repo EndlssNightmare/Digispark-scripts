@@ -1,4 +1,5 @@
 Set-MpPreference -ExclusionPath 'C:\Users\USERNAME\appdata\roaming\microsoft\windows\start menu\programs\startup' //Set an exclusion path or file.
+Set-MpPreference -ExclusionPath 'C:\%homepath%\appdata\roaming\microsoft\windows\start menu\programs\startup' //Set an exclusion path or file.
 
 Get-Command -Module Defender //List commands.
 
