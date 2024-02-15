@@ -39,7 +39,7 @@ net user Administrator //Mostra as informações desse usuário.
 
 net user usuario senha /add //Adiciona um usuário com senha.
 
-net user usuario /active:no //Ativa o usuario.
+net user usuario /active:yes //Ativa o usuario.
 net user usuario /active:no //Desativa o usuario.
 
 net localgroup //Lista grupos locais.
